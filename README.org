@@ -1,0 +1,8 @@
+#+TITLE: Secrets README
+
+* Introduction
+  This is a directory containing secrets. Encrypted of course. 
+
+
+  
+# -*- epa-file-encrypt-to: nil -*-
