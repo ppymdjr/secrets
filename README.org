@@ -1,8 +1,18 @@
+# -*- epa-file-encrypt-to: nil -*-
+
 #+TITLE: Secrets README
 
 * Introduction
   This is a directory containing secrets. Encrypted of course. 
 
+ To make emacs play nice with encryption I added the following in
+ file:~/.gnupg/gpg.conf 
 
+ ~pinentry-mode loopback~
   
-# -*- epa-file-encrypt-to: nil -*-
+I also added this to my emacs: ~(setq
+epa-file-cache-passphrase-for-symmetric-encryption t)~
+
+Also note the header line. Now I have GPG symmetrically encrypted
+things with strong passphrases and emacs epa knows how to open
+them. Cool. 
